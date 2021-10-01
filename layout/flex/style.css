@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+/* resets */
+
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed';
+}
+
+html, body {
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* generics */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* blocks */
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid__head, .grid__foot {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__center {
+    flex-basis: 80%;
+    display: flex;
+}
+
+.grid__center-aside {
+    flex-basis: 10%;
+}
+
+.grid__center-main {
+    flex-basis: 80%;
+}

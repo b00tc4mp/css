@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .mark {
+            border: 1px solid red;
+        }
+
+        .limited-max-text {
+            font-size: min(5vw, 3rem);
+        }
+
+        .locate-centered {
+            display: inline-block;
+            position: relative;
+            transform: translate(-50%, -50%);
+            left: 50vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mark">
+        <h1 class="text-[5%]">hello world</h1>
+        <h1 class="text-[min(5vw, 2vw)]">hello world</h1>
+        <h1 class="limited-max-text">hello world</h1>
+
+        <div class="locate-centered mark">hola mundo</div>
+    </header>
+</body>
+
+</html>
